@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     const produtosLista = document.getElementById('produtos-lista');
     const pagination = document.getElementById('pagination');
