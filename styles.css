@@ -245,6 +245,18 @@ body {
     .page-item {
         margin: 3px;
     }
+
+    /* Ajuste para a logo em telas menores */
+    .navbar-brand img {
+        max-width: 120px; /* Diminui o tamanho da logo em telas pequenas */
+    }
+
+    /* Ajuste para evitar corte no menu de navegação */
+    .navbar-nav .nav-link {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+    }
 }
 
 /* Seção Sobre Nós */
@@ -291,60 +303,8 @@ footer a {
 footer a:hover {
     color: #FF8C00;
 }
-/* Estilos gerais */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
-}
 
-/* Barra de navegação */
-.navbar {
-    background-color: #000; /* Mantém o fundo preto */
-    position: relative;
-    z-index: 10;
-}
-
-.navbar-brand, .nav-link {
-    color: #FFA500 !important; /* Ajusta a cor do texto para laranja */
-}
-
-.navbar-toggler-icon {
-    color: #FFA500;
-}
-
-/* Ajusta o tamanho da logo */
-.navbar-brand img {
-    max-width: 150px;
-    height: auto;
-}
-
-/* Estilo do link no menu de navegação */
-.navbar-nav .nav-link {
-    color: #FFA500 !important; /* Deixa o texto laranja */
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #FF8C00; /* Cor quando passar o mouse */
-}
-
-/* Estilo para as redes sociais */
-.social-icons .nav-link {
-    color: #FFA500 !important; /* Define a cor laranja para os ícones */
-    font-size: 1.5rem;
-    margin-left: 10px;
-}
-
-.social-icons .nav-link:hover {
-    color: #FF8C00;
-}
-
-/* Ajustes para o banner */
+/* Ajustes adicionais para o banner */
 .banner-container {
     width: 100vw; /* Largura total da tela */
     overflow: hidden; /* Remove qualquer parte que ultrapasse os limites */
@@ -356,5 +316,3 @@ body {
     border-radius: 10px;
     margin-bottom: 20px;
 }
-
-/* Estilos para outras seções aqui... */
