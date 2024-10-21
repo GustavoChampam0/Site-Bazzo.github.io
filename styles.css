@@ -231,6 +231,19 @@ body {
     border-color: #FF8C00;
 }
 
+/* Ajustes para o banner */
+.banner-container {
+    width: 100vw; /* Largura total da tela */
+    overflow: hidden; /* Remove qualquer parte que ultrapasse os limites */
+}
+
+.banner-container img {
+    width: 100vw; /* Expande para 100% da largura da janela */
+    height: auto; /* Mantém a altura automática */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
 /* Responsivo: Ajuste para telas menores */
 @media (max-width: 576px) {
     .pagination {
@@ -304,15 +317,40 @@ footer a:hover {
     color: #FF8C00;
 }
 
-/* Ajustes adicionais para o banner */
-.banner-container {
-    width: 100vw; /* Largura total da tela */
-    overflow: hidden; /* Remove qualquer parte que ultrapasse os limites */
+/* Botões Móveis (Aparecem apenas no celular) */
+.mobile-nav-buttons {
+    display: none;
 }
 
-.banner-container img {
-    width: 100vw; /* Expande para 100% da largura da janela */
-    height: auto; /* Mantém a altura automática */
-    border-radius: 10px;
-    margin-bottom: 20px;
+/* Exibe os botões em telas menores */
+@media (max-width: 576px) {
+    .mobile-nav-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px 0;
+    }
+
+    .mobile-nav-buttons a {
+        display: block;
+        background-color: #FFA500;
+        color: white;
+        padding: 12px 20px;
+        margin-bottom: 12px;
+        border-radius: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1rem;
+        text-decoration: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        width: 80%;
+        text-align: center;
+    }
+
+    .mobile-nav-buttons a:hover {
+        background-color: #FF8C00;
+        box-shadow: 0 6px 12px rgba(255, 140, 0, 0.5);
+        transform: translateY(-3px);
+    }
 }
